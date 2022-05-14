@@ -511,6 +511,11 @@ textarea {
 .about-us {
   padding-top: 0;
 }
+@media screen and (max-width: 1200px) {
+  .about-us {
+    display: none;
+  }
+}
 
 .our-item {
   display: block;
@@ -612,6 +617,7 @@ textarea {
 @media screen and (min-width: 1200px) {
   .advantage-item {
     width: calc(25% - 30px);
+    margin-bottom: 0;
   }
   .advantage-item + .advantage-item {
     margin-left: 30px;
