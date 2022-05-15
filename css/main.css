@@ -667,12 +667,46 @@ textarea {
 }
 
 .team-list {
-  display: flex;
   justify-content: space-between;
 }
 .team-list__photo {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .team-list__photo:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list {
+    display: flex;
+    margin-left: -30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team-list__photo {
+    width: calc(50% - 30px);
+    margin-left: 30px;
+  }
+  .team-list__photo:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list__photo {
+    width: calc(25% - 30px);
+    margin-left: 30px;
+    margin-bottom: 0;
+  }
 }
 
 .team-section {
@@ -683,7 +717,12 @@ textarea {
   background-color: #FFFFFF;
   border-radius: 0px 0px 4px 4px;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .team-card {
+    padding-bottom: 30px;
+  }
 }
 .team-card__name {
   font-weight: 500;
@@ -709,7 +748,12 @@ textarea {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--header-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .team-title {
+    margin-bottom: 50px;
+  }
 }
 
 .constant-clients {
