@@ -743,8 +743,8 @@ textarea {
 
 .team-title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--header-color);
@@ -753,26 +753,73 @@ textarea {
 @media screen and (min-width: 1200px) {
   .team-title {
     margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
   }
 }
 
 .constant-clients {
   padding-top: 94px;
+  padding-bottom: 94px;
+}
+@media screen and (max-width: 1199px) {
+  .constant-clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .constant-clients-list {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+
+.constant-clients-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--header-color);
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .constant-clients-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .clients-title {
   display: flex;
+  width: calc(50% - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .clients-title {
+    width: calc(33.3333333333% - 30px);
+  }
+  .clients-title:nth-last-child(-n+3) {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-title {
+    width: calc(16.6666666667% - 30px);
+    margin-bottom: 0;
+  }
+}
+
+.clients-title:nth-last-child(-n+2) {
+  margin-bottom: 0;
 }
 
 .clients-link {
   display: flex;
-  width: 170px;
+  width: 100%;
   height: 92px;
   justify-content: center;
   align-items: center;
@@ -791,7 +838,6 @@ textarea {
 
 .clients-image {
   fill: currentColor;
-  height: 92px;
 }
 
 .footer {
