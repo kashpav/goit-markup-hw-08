@@ -15,6 +15,12 @@
     &--white {
     color: var(--second-header-color);
     margin-bottom: 20px;
+    // @media screen and (min-width:1200px) {
+    //     display: flex;
+    //     align-items: flex-start;
+    //     }
+    // padding-left: auto;
+    // padding-right: auto;
     }
 }
 

@@ -36,7 +36,7 @@
         border-radius: 0px 0px 4px 4px;
     }
 
-    @media screen and (min-width:480px) and (max-width:1199px) {
+    @media screen and (max-width:1199px) {
             &__photo:not(:last-child) {
             margin-bottom: 30px;
         }

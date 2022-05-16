@@ -673,7 +673,7 @@ textarea {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .team-list__photo:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -844,15 +844,32 @@ textarea {
   background-color: var(--background-solutions-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  width: 100%;
 }
 
 .footer-container {
-  display: flex;
   align-items: baseline;
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .footer-list {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-list {
+    align-items: flex-start;
+  }
 }
 
 .footer-item + .footer-item {
@@ -877,6 +894,8 @@ textarea {
   text-transform: uppercase;
   color: #FFFFFF;
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .footer-soc-list {
@@ -884,15 +903,32 @@ textarea {
   justify-content: left;
 }
 
-.footer-content,
-.footer-soc,
-.footer-sub {
-  box-sizing: content-box;
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-content {
+    width: 231px;
+    align-items: flex-start;
+    margin-bottom: 0;
+    margin-right: 70px;
+  }
 }
 
 .footer-soc {
-  margin-right: 93px;
-  margin-left: 85px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-soc {
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
 }
 
 .footer-soc-item + .footer-soc-item {
@@ -912,6 +948,63 @@ textarea {
   background-color: var(--accent-color);
 }
 
+.form-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .form-footer {
+    align-items: flex-start;
+  }
+}
+
+.form-sub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .form-sub {
+    flex-direction: row;
+  }
+}
+
+.form-input-footer {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 480px) {
+  .form-input-footer {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-input-footer {
+    margin: 0 12px 0 0;
+    width: 358px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-tablet {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-tablet {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 .btn {
   font-family: inherit;
   font-weight: 500;
