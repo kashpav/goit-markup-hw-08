@@ -429,6 +429,20 @@ textarea {
   border-bottom: 1px solid #EEEEEE;
 }
 
+.menu-button {
+  display: flex;
+  background-color: transparent;
+  border: transparent;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-right: 0;
+  padding-left: 0;
+}
+
 .header-contacts {
   display: flex;
   align-items: center;
@@ -446,6 +460,7 @@ textarea {
 .header-menu {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header-navigation__list {
