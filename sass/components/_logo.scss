@@ -12,8 +12,12 @@ color: var(--accent-color);
 }
 &--black {
 color: #000000;
+margin-right: 88px;
+@media screen and (min-width:1200px) {
 margin-right: 93px;
+    }
 }
+
 &--white {
 color: var(--second-header-color);
 margin-bottom: 20px;
